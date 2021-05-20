@@ -169,4 +169,20 @@ function afficherScore() {
     // Affichage de la modale
     let modale = document.getElementById("score");
     modale.style.opacity = "1";
+
+    // Ajout d'un listener sur le bouton "recommencer" pour réinitialiser le questionnaire
+    document.getElementById("reload").addEventListener("click", () => {
+        console.log("clic");
+        // Réinitialisation des boutons radios
+        let radios = document.querySelectorAll("input[type=radio]:checked");
+
+        if(radios.length > 0) {
+            for(let radio of radios) {
+                radio.checked = false;
+            }
+        }
+        cptScore = 0;
+        modale.style.opacity = "0";
+        
+    })
 }

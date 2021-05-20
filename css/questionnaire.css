@@ -50,7 +50,7 @@ h1 {
     justify-content: space-between;
 }
 
-input[type=submit], input[type=reset], button.reload {
+input[type=submit], input[type=reset], button#reload {
     width: calc(50% - 1em);
     padding: 1em 0;
     border: none;
@@ -59,6 +59,11 @@ input[type=submit], input[type=reset], button.reload {
     margin: 1em 0;
     color: white;
     font-size: 1em;
+}
+
+input[type=submit]:hover, input[type=reset]:hover, button#reload:hover {
+    cursor: pointer;
+    background-color: rgb(32, 156, 228);
 }
 
 input[type=submit] {
@@ -75,7 +80,7 @@ input[type=submit] {
     padding: 4em;
     border-radius: 20px;
     opacity: 0;
-    transition: opacity 1.5s;
+    transition: opacity 1s;
 }
 
 #score p {
@@ -84,10 +89,10 @@ input[type=submit] {
     color: white;
 }
 
-button.reload {
+button#reload {
     display: block;
     background-color: white;
     color: rgb(3, 140, 219);
     margin: auto;
-    margin-top: 10em;
+    margin-top: 20vh;
 }
