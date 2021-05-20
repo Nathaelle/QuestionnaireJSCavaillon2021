@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body-light">
+    <h1>Ma super calculatrice</h1>
+
+    <form class="calc" action="#" method="POST">
+        <input type="text">
+        <select name="" id="">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="text">
+        <input type="submit" value="Calculer">
+    </form>
+
+    <div class="control-panel">
+        <h2>Personnaliser l'interface</h2>
+
+        <form action="#">
+            <div>
+                <label for="theme">Choisir un thème</label>
+                <select name="theme" id="theme">
+                    <option value="light" selected>Light Theme</option>
+                    <option value="dark">Dark Theme</option>
+                </select>
+            </div>
+            <hr>
+            <div>
+                <label for="titres">Couleur des titres</label>
+                <select name="titres" id="titres">
+                    <option value="grey">Gris</option>
+                    <option value="green">Vert clair</option>
+                    <option value="white">Blanc</option>
+                    <option value="blue">Bleu</option>
+                </select>
+            </div>
+            
+
+        </form>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightslategray;
+    background-image: url("../img/montagne-7.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333
+}
+
+h1 {
+    font-size: 3em;
+    width: 70%;
+    margin: auto;
+    padding: 0.5em;
+}
+
+#questions {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 70%;
+    margin: auto;
+    padding: 1em;
+}
+
+.question {
+    border: 1px solid lightslategray;
+    border-radius: 20px;
+    width: 80%;
+    margin: 1em auto;
+    padding: 1em;
+}
+
+.reponse {
+    margin: 1em;
+}
+
+.reponse label {
+    margin-left: 2em;
+}
+
+.boutons {
+    width: calc(70% + 2em);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type=submit], input[type=reset] {
+    width: calc(50% - 1em);
+    padding: 1em 0;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(3, 140, 219);
+    margin: 1em 0;
+    color: white;
+    font-size: 1em;
+}
+
+input[type=submit] {
+    font-weight: bold;
+}
+
+#score {
+    height: 30vh;
+    width: 50%;
+    position: fixed;
+    right: 0;
+    top: 20vh;
+    background-color: rgba(3, 140, 219, .8);
+    padding: 4em;
+    border-radius: 20px 0 0 20px;
+    margin-right: calc(-50% - 8em);
+}
+
+#score p {
+    font-size: 4em;
+}
