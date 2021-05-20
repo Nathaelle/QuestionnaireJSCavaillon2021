@@ -32,7 +32,7 @@ var question2 = {
 
 var question3 = {
     numero: 3,
-    intitule: "Quel animal hiberne?",
+    intitule: "Quel est l'animal qui hiberne?",
     reponses: [
         { numero: 9, libelle: "Oursin", valeur: false },
         { numero: 10, libelle: "Marmotte", valeur: true },
