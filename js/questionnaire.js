@@ -172,13 +172,17 @@ function afficherScore() {
 
     // Ajout d'un listener sur le bouton "recommencer" pour réinitialiser le questionnaire
     document.getElementById("reload").addEventListener("click", () => {
-        console.log("clic");
+        
         // Réinitialisation des boutons radios
         let radios = document.querySelectorAll("input[type=radio]:checked");
 
         if(radios.length > 0) {
             for(let radio of radios) {
                 radio.checked = false;
+
+                let label = radio.parentElement.childNodes[1];
+                label.style.color = "#333";
+                label.style.fontWeight = "normal";
             }
         }
         cptScore = 0;
@@ -186,3 +190,12 @@ function afficherScore() {
         
     })
 }
+
+document.getElementById("prev").addEventListener("click", (e) => {
+    e.preventDefault();
+    document.getElementById("questions").style.marginLeft = "calc(-100% - 2em)";
+});
+document.getElementById("next").addEventListener("click", (e) => {
+    e.preventDefault();
+    document.getElementById("questions").style.marginLeft = "100%";
+});
