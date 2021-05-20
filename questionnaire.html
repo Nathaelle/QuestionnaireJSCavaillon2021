@@ -11,13 +11,22 @@
 
     <h1>Testez votre culture générale</h1>
 
-    <div id="score">
-        <p>Score : <span id="points">5</span>/<span id="total">5</span></p>
-    </div>
 
+    <!-- Affichage du score (dans fenêtre modale) en fin de questionnaire -->
+    <div id="score">
+        <p>Score : <span id="points">NC</span></p>
+        <button class="reload">Recommencer</button>
+    </div>
+    <!-- Fin : Affichage du score en fin de questionnaire -->
+
+
+    <!-- Formulaire permettant de répondre au questionnaire -->
     <form action="#" id="formulaire">
+
+        <!-- "Futur" conteneur pour nos questions (générées en JS) -->
         <div id="questions">
-            <!-- Plan type d'une question -->
+
+            <!-- Plan type d'une question (MAQUETTE) -->
             <div class="question">
                 <h2>Intitulé de la question</h2>
                 <div class="reponse">
@@ -37,7 +46,8 @@
                     <label for="">Réponse 4</label>
                 </div>
             </div>
-            
+            <!-- Fin : Plan type d'une question (MAQUETTE) -->
+
         </div>
 
         <div class="boutons">

@@ -50,7 +50,7 @@ h1 {
     justify-content: space-between;
 }
 
-input[type=submit], input[type=reset] {
+input[type=submit], input[type=reset], button.reload {
     width: calc(50% - 1em);
     padding: 1em 0;
     border: none;
@@ -69,14 +69,25 @@ input[type=submit] {
     height: 30vh;
     width: 50%;
     position: fixed;
-    right: 0;
+    left: 25%;
     top: 20vh;
-    background-color: rgba(3, 140, 219, .8);
+    background-color: rgba(3, 140, 219, .9);
     padding: 4em;
-    border-radius: 20px 0 0 20px;
-    margin-right: calc(-50% - 8em);
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 1.5s;
 }
 
 #score p {
     font-size: 4em;
+    text-align: center;
+    color: white;
+}
+
+button.reload {
+    display: block;
+    background-color: white;
+    color: rgb(3, 140, 219);
+    margin: auto;
+    margin-top: 10em;
 }
