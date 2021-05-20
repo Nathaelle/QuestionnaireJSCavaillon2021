@@ -3,14 +3,14 @@
  * Définition des données
  */
 
-var reponse1 = { numero: 1, libelle: "Oeil", valeur: false };
+var reponse1 = { numero: 1, libelle: "Oeil", valeur: true };
 var reponse2 = { numero: 2, libelle: "Nez", valeur: false };
-var reponse3 = { numero: 3, libelle: "Oreille", valeur: true };
+var reponse3 = { numero: 3, libelle: "Oreille", valeur: false };
 var reponse4 = { numero: 4, libelle: "Estomac", valeur: false };
 
 var question1 = {
     numero: 1,
-    intitule: "Un acouphène est une sensation qui affecte quel organe?",
+    intitule: "Une conjonctivite est une maladie qui affecte quel organe?",
     reponses: [
         reponse1,
         reponse2,
@@ -21,23 +21,23 @@ var question1 = {
 
 var question2 = {
     numero: 2,
-    intitule: "Où se trouve la ville de Calgary?",
+    intitule: "Où se trouve la ville de Paris?",
     reponses: [
         { numero: 5, libelle: "Etats-Unis", valeur: false },
         { numero: 6, libelle: "Australie", valeur: false },
-        { numero: 7, libelle: "Canada", valeur: true },
+        { numero: 7, libelle: "France", valeur: true },
         { numero: 8, libelle: "Danemark", valeur: false }
     ]
 }
 
 var question3 = {
     numero: 3,
-    intitule: "Quel animal n'hiberne pas?",
+    intitule: "Quel animal hiberne?",
     reponses: [
-        { numero: 9, libelle: "Ours", valeur: false },
-        { numero: 10, libelle: "Marmotte", valeur: false },
-        { numero: 11, libelle: "Herisson", valeur: false },
-        { numero: 12, libelle: "Pivert", valeur: true }
+        { numero: 9, libelle: "Oursin", valeur: false },
+        { numero: 10, libelle: "Marmotte", valeur: true },
+        { numero: 11, libelle: "Chat", valeur: false },
+        { numero: 12, libelle: "Pivert", valeur: false }
     ]
 }
 
